@@ -27,6 +27,8 @@ for (let l=0;l<lista2.length;l++){
     if(lcumple==true){
         suma+=Number(lista2[l][(lista2[l].length/2)-0.5])
     }
+
+    
 }
 
 

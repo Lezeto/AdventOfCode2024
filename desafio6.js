@@ -46,5 +46,6 @@ for (let l=0; l<listasCantidad; l++){
         if (lista[l][n]=="X"){suma+=1}
     }
 }
-
 console.log(suma);
+lista = lista.map (x => x.join(""));
+console.log(lista);
