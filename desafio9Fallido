@@ -1,0 +1,19 @@
+const fs = require("node:fs");
+var texto1= fs.readFileSync("/Users/nicol/Documents/estudiandin/2024/Advent of Code/9input.txt",{encoding: "utf8", flag: "r"});
+let lista=texto1.split("");
+let lista2=[];
+for (let i=0; i<texto1.length; i++){
+    if (i%2==0){   lista2.push(   ...Array(Number(lista[i])).fill(i) )    }else{
+        lista2.push(   ...Array(Number(lista[i])).fill(".")  )
+    }
+}   
+console.log("lista descomprimida: " + lista2)
+let a=0;
+while(lista2.includes(".")){
+lista2[lista2.indexOf(".")]=lista2.pop();
+a++
+if(a%10==0){
+console.log("la lista ha sido modificada: "+ a/10 + "0 veces")
+}}
+
+console.log(lista2)
